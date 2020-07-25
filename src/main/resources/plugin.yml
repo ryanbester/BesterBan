@@ -1,0 +1,5 @@
+main: com.ryanbester.besterban.BesterBan
+name: BesterBan
+version: ${project.version}
+author: Ryan Bester
+description: Custom ban messages

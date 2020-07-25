@@ -1,0 +1,73 @@
+# Displayed when no player is specified.
+# Params: $type: Network or server.
+ban-specify-player: "&6[BesterBan] &4$type ban: You must specify a player to ban."
+
+# Displayed when no reason is specified.
+# Params: $type: Network or server, $player: Player's username.
+ban-specify-reason: "&6[BesterBan] &4$type ban: You must specify a reason for the ban."
+
+# Displayed when no server is specified for server bans.
+# Params: $player: Player's username.
+ban-specify-server: "&6[BesterBan] &4Server ban: You must specify a server to ban the player from."
+
+# Displayed when no duration is specified on temporary bans.
+# Params: $type: Network or server, $player: Player's username.
+ban-specify-duration: "&6[BesterBan] &4$type ban: You must specify a duration for the ban."
+
+# Displayed when trying to ban a Bedrock player that is offline.
+# Params: $type: Network or server, $player: Player's username.
+ban-bedrock-player-offline: "&6[BesterBan] &4$type ban: To ban a bedrock player while they're offline, use x:[XUID]."
+
+# Displayed when the specified duration is in an incorrect format.
+# Params: $type: Network or server, $player: Player's username, $duration: Duration specified.
+ban-invalid-duration-format: "&6[BesterBan] &4$type ban: Invalid duration format: $duration."
+
+# Displayed when an SQLException occurred generating an appeal ID.
+# Params: $type: Network or server, $player: Player's username, $message: Exception message, $stacktrace: Exception stack trace.
+ban-error-generate-appeal-id: "&6[BesterBan] &4$type ban: Error banning player: $player."
+
+# Displayed when the UUID cannot be retrieved for the player (player does not exist, network error, etc).
+# Params: $type: Network or server, $player: Player's username.
+ban-error-uuid: "&6[BesterBan] &4$type ban: Error banning player: $player."
+
+# Displayed when an error occurred adding the ban to the database.
+# Params: $type: Network or server, $player: Player's username, $uuid: Player's UUID.
+ban-error-adding: "&6[BesterBan] &4$type ban: Error banning player: $player."
+
+# Displayed when an SQLException occurred adding the ban to the database.
+# Params: $type: Network or server, $player: Player's username, $message: Exception message, $stacktrace: Exception stack trace.
+ban-error-sql: "&6[BesterBan] &4$type ban: Error banning player: $player."
+
+# Displayed when a player has been permanently banned.
+# Params: $type: Network or server, $player: Player's username, $uuid: Player's UUID, $reason: The reason for the ban.
+ban-permanently-banned: "&6[BesterBan] &2$type ban: Permanently banned player: $player for $reason."
+
+# Displayed when a player has been temporarily banned.
+# Params: $type: Network or server, $player: Player's username, $uuid: Player's UUID, $reason: The reason for the ban. $duration: Duration.
+ban-temporarily-banned: "&6[BesterBan] &2$type ban: Banned player: $player for $reason for $duration."
+
+# Displayed when no player is specified.
+unban-specify-player: "&6[BesterBan] &4Unban: You must specify a player to unban."
+
+# Displayed when trying to unban a Bedrock player that is offline.
+# Params: $player: Player's username.
+unban-bedrock-player-offline: "&6[BesterBan] &4Unban: To unban a bedrock player while they're offline, use x:[XUID]."
+
+# Displayed when the UUID cannot be retrieved for the player (player does not exist, network error, etc).
+# Params: $player: Player's username.
+unban-error-uuid: "&6[BesterBan] &4Unban: Error unbanning player: $player."
+
+# Displayed when an error occurred removing the ban from the database.
+# Params: $player: Player's username, $uuid: Player's UUID.
+unban-error-removing: "&6[BesterBan] &4Unban: Error unbanning player: $player."
+
+# Displayed when an SQLException occurred removing the ban from the database.
+# Params: $player: Player's username, $message: Exception message, $stacktrace: Exception stack trace.
+unban-error-sql: "&6[BesterBan] &4Unban: Error unbanning player: $player."
+
+# Displayed when a player has been unbanned.
+# Params: $player: Player's username, $uuid: Player's UUID.
+unban-unbanned: "&6[BesterBan] &2Unban: Unbanned player: $player."
+
+# Displayed when a player tries to connect but their ban status cannot be verified with the database.
+error-checking-ban: "&6[BesterBan] &4Cannot check if you are banned or not."

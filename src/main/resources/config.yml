@@ -1,0 +1,14 @@
+# Server to send players to when banned from server.
+fallback-server: lobby
+
+# Database settings
+database:
+  host: localhost
+  port: 3306
+  database: minecraft
+  table: banned_players
+  username: username
+  password: Password
+
+# Bedrock username prefix
+bedrock-prefix: "*"
